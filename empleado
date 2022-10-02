@@ -1,0 +1,19 @@
+package ejer18C3;
+
+public class empleado {
+    public static double salario_bruto (double horas, double vhora){
+       double salarioBruto;
+       salarioBruto = horas*vhora;
+       return salarioBruto;    
+    }
+    public static double retencion_fuente (double horas, double vhora, double  porcentaje){
+        double retencion;
+        retencion = (vhora*horas)*(porcentaje/100);
+        return retencion;
+    }
+    public static double salario_Neto (double horas, double vhora, double  porcentaje){
+        double salarioNeto;
+        salarioNeto = (horas*vhora)-((vhora*horas)*(porcentaje/100));
+        return salarioNeto;
+    }    
+}
